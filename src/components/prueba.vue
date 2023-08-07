@@ -1,10 +1,10 @@
 <template>
     <div class="general">
-      <!-- Modal de actualización -->
+      <!-- Modal of update -->
       <div class="modal" :style="{ display: showModal ? 'block' : 'none' }">
       <div class="modal-content">
         <span class="close" @click="closeUpdateModal">&times;</span>
-        <!-- Formulario de actualización -->
+        <!-- Form of update -->
         <form @submit.prevent="updateUser">
         
           <div class="form-group"><label for="name">Name:</label><br>
@@ -20,10 +20,12 @@
       </div>
     </div>
     <br><br>
+    User search by name, email, and phone.
     <div class="search">
       <input  v-model="searchTerm" placeholder="SEARCH NAME"> <br><br>
       <button class="btn btn-info" @click="listUsers">Change Users</button>
     </div>
+    <!-- User listing table. -->
       <table class="user-table">
         <thead>
           <tr>
@@ -63,6 +65,7 @@
       };
     },
     methods: {
+      // List the users."
       async listUsers() {
         console.log('xxxlistarUsuariosxxx')
 
@@ -70,6 +73,7 @@
         const data = await response.json()
         this.users = data.results
       },
+      // update the users
       async updateUser(index) {
         console.log('xxxcargarxxx')
 
@@ -81,6 +85,7 @@
      
         }
       },
+      // Activate modal for updating data."
       showUpdateModal(index) {
         console.log('xxxmodalxxx');
         this.updateUserIndex = index;
@@ -89,6 +94,7 @@
         this.updatedPhone = this.users[index].phone
         this.showModal = true
       },
+      // close the modal."
       closeUpdateModal() {
         console.log('xxxcerrarxxx');
 
@@ -99,6 +105,7 @@
 
         this.updateUserIndex = -1
       },
+      // delete users
       deleteUser(index) {
         console.log('xxxeliminarxxx')
 
@@ -109,6 +116,7 @@
   },
     },
     computed: {
+      // user filtering by name, email, and phone.
       filteredUsers() {
         const searchTerm = this.searchTerm.toLowerCase()
         return this.users.filter(user => {

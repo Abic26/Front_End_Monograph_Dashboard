@@ -1,4 +1,5 @@
 <template>
+ <!--main content -->
     <main>   
     <div class="container">
         <div class="box1">
@@ -13,6 +14,7 @@
 
                 </div>
         </div>
+        <!-- svg main content -->
         <div class="box2">
             <img class="imgDevices" src="/illustration-devices.svg" alt="">
         </div>
