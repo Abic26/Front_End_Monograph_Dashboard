@@ -42,7 +42,7 @@
     justify-content: center;
     align-items: flex-start; 
     flex: 1;
-    margin-left: -15vh;
+    margin-left: -15.5vh;
     font-family: 'Barlow Condensed', sans-serif;
     padding-top: 50px;
 }
@@ -162,7 +162,7 @@ p{
   }
 
   .box2 {
-    margin-left: -23  0px;
+    margin-left: -230px;
   }
   
 .imgDevices{
