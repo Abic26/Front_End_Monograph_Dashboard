@@ -148,6 +148,16 @@
       margin: 0 8vh 0 8vh;
       background-color: white;
     }
+    .options p{
+    color: black;
+    font-weight: bolder; 
+    }
+    .options p:hover{
+      color: #00000076;
+      cursor: pointer;
+      border-bottom: 0px #00000000;
+    
+    }
    
   
     .espacio {
