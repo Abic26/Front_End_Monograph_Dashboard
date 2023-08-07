@@ -25,11 +25,11 @@ export default {
 </script>
 <template>
   
-  <bg />
-
+  
   <NavBar />
+  <Main />
+  <bg />
   <Modal_Login/>  
-    <Main />
     <!-- <Index_Login /> -->
     <!-- <prueba /> -->
 </template>
