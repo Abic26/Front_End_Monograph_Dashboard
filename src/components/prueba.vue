@@ -29,6 +29,7 @@
       <table class="user-table">
         <thead>
           <tr>
+            <th>Photo User</th>
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
@@ -38,6 +39,7 @@
         </thead>
         <tbody>
           <tr v-for="(user, index) in filteredUsers" :key="index">
+            <td> <img :src="user.picture.thumbnail"></td>
             <td>{{ user.name.first }}</td>
             <td>{{ user.email }}</td>
             <td>{{ user.phone }}</td>
@@ -64,14 +66,27 @@
         updateUserIndex: -1,
       };
     },
+    async mounted() {
+    console.log('xxxmountedxxx');
+    await this.listUsers(); 
+  },
+
     methods: {
       // List the users."
       async listUsers() {
+        try{ 
         console.log('xxxlistarUsuariosxxx')
-
         const response = await fetch('https://randomuser.me/api/?results=10')
         const data = await response.json()
+        console.log(data);
         this.users = data.results
+        localStorage.setItem('usersLocal', JSON.stringify(this.users));
+
+        }catch (error){   
+            console.error("error",error);
+
+        }
+       
       },
       // update the users
       async updateUser(index) {
@@ -137,7 +152,7 @@
   }  
   .general{
       background: hsl(204, 59%, 87%);
-      height: 900px;
+      height: 950px;
       width: 800px;
       border-radius: 15px;
       padding: 0px 20px 0 20px;
@@ -151,7 +166,6 @@
 
     .modal {
       color: black;
-
       display: none;
       position: fixed;
       z-index: 1;
