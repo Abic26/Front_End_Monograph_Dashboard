@@ -1,4 +1,5 @@
 <template>
+  <!-- navbar page -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -32,7 +33,6 @@
       </nav>
       <slot></slot>
     </header>   
-    <!-- <Modal_Login /> -->
   </template>
 <script>
   export default {
