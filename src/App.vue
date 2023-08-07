@@ -1,11 +1,10 @@
 <script>
-import NavBar from './components/NavBar.vue';
+import NavBar from './components/Navbar.vue';
 import Main from './components/Main.vue';
 import bg from './components/Background.vue';
 import Modal_Login from './components/Modal_Login.vue';
 // import prueba from './components/prueba.vue';
 // import Index_Login from './components/Index_Login.vue';
-
 
 
 
