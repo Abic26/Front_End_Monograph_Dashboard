@@ -75,7 +75,7 @@
 
         if (this.updateUserIndex !== -1) {
           this.users[this.updateUserIndex].name.first = this.updatedName;
-          this.users[this.updateUserIndex].email = this.updatedEmai
+          this.users[this.updateUserIndex].email = this.updatedEmail
           this.users[this.updateUserIndex].phone = this.updatedPhone
           this.closeUpdateModal()
      
