@@ -6,11 +6,6 @@ import Modal_Login from './components/Modal_Login.vue';
 // import prueba from './components/prueba.vue';
 // import Index_Login from './components/Index_Login.vue';
 
-
-
-
-
-
 export default {
   components: {
     NavBar,

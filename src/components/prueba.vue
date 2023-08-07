@@ -102,7 +102,7 @@
       deleteUser(index) {
         console.log('xxxeliminarxxx')
 
-    const confirmDelete = alert("Are you sure you want to delete this user?")
+    const confirmDelete = alert("Are you sure you want to delete this user, if not press the ESC key or tap in your display mobile?")
     if (confirmDelete) {
       this.users.splice(index, 1)
     }

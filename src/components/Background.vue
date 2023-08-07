@@ -23,9 +23,10 @@ body{
 }
 @media (max-width: 768px) {
   .background {
+    margin-right: -100px;
     z-index: -1;
     height: 400px; 
-    width: 260px;
+    width: 360px;
 }
 }
 
