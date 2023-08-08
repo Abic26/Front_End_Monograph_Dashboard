@@ -4,19 +4,19 @@
       <!-- Modal of update -->
       <div class="modal" :style="{ display: showModal ? 'block' : 'none' }">
       <div class="modal-content">
-        <span class="close" @click="closeUpdateModal">&times;</span>
+        <span class="close" @click="closeUpdateModal">&times;</span>        
         <!-- Form of update -->
         <form @submit.prevent="updateUser">
         
-          <div class="form-group"><label for="name">Name:</label><br>
+          <div class="form-group col-6 mx-auto"><label class="fs-10 fw-bolder" for="name">Name:</label><br>
           <input v-model="updatedName" id="name" type="text"></div>
         
-          <div class="form-group"><label for="email">Email:</label><br>
+          <div class="form-group col-6 mx-auto"><label class="fs-10 fw-bolder" for="email">Email:</label><br>
           <input v-model="updatedEmail" id="email" type="text"></div>
             
-          <div class="form-group"><label for="name">Phone:</label><br>
+          <div class="form-group col-6 mx-auto"><label class="fs-10 fw-bolder" for="name">Phone:</label><br>
           <input v-model="updatedPhone" id="phone" type="text"></div>
-          <button class="btn btn-primary" type="submit">Save</button>
+          <button class="btn btn-danger d-grid gap-2 col-8 mt-3 mx-auto" type="submit">Save</button>
         </form>
       </div>
     </div>
