@@ -1,5 +1,6 @@
 <template>
     <div class="general">
+      <div class="container">
       <!-- Modal of update -->
       <div class="modal" :style="{ display: showModal ? 'block' : 'none' }">
       <div class="modal-content">
@@ -20,44 +21,57 @@
       </div>
     </div>
     <br><br>
-    User search by name, email, and phone.
+    <h2>
+    Table <a class="fs-1" href="https://randomuser.me/" target="_blank"> randomuser.me</a> Api
+    </h2>
     <div class="search">
-      <input  v-model="searchTerm" placeholder="SEARCH NAME"> <br><br>
-      <button class="btn btn-info" @click="listUsers">Change Users</button>
+      <div class="input-group">
+      <span class="input-group-text">search by name or email or phone</span>
+      <input  v-model="searchTerm" class="form-control" placeholder="SEARCH"> <br><br>
+      </div>
+      <br>
+      <button class="btn btn-outline-success" @click="listUsers">Change Users</button>
     </div>
     <!-- User listing table. -->
-      <table class="user-table">
+      <table class="user-table table">
         <thead>
           <tr>
-            <th>Photo User</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>UPDATE ////// DELETE</th>
+            <th scope="col">Photo User</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Update User</th>
+            <th scope="col">Delete User</th>
+
 
           </tr>
         </thead>
         <tbody>
           
             <tr v-for="(user, index) in filteredUsers" :key="index">
-            <td> <img :src="user.picture.thumbnail"></td>
-            <td>{{ user.name.first }}</td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.phone }}</td>
-            <td>
+            <td scope="row"> <img :src="user.picture.thumbnail"></td>
+            <td scope="row">{{ user.name.first }}</td>
+            <td scope="row">{{ user.email }}</td>
+            <td scope="row">{{ user.phone }}</td>
+            <td scope="row">
               <button class="btn btn-success" @click="showUpdateModal(index)">Update</button>
+            </td>
+            <td scope="row">
               <button class="btn btn-danger" @click="deleteUser(index)">Delete</button>
             </td>
           </tr>
         </tbody>
       </table>
+      </div>  
     </div>
   </template>
   
   <script>
   export default {
+    
     data() {
       return {
+        title: '',
         users: [],
         searchTerm: '',
         showModal: false,
@@ -148,21 +162,38 @@
   </script>
   
     <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
   body{
-      background: hsl(207, 33%, 95%);
+      /* background: hsl(207, 33%, 95%); */
   }  
   .general{
     background:hsl(0, 69%, 86%);
-    height: 900px;
-    width: 800px;
+    /* height: 950px;
+    width: 800px; */
+    margin-top: 40px;
+    margin-right: -450px;
     border-radius: 15px;
-    padding: 0px 20px 0 20px;
+    padding: 0px 20px 10px 20px;
     font-size: 15px;
     color: black;
 
   }
+  h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight:  bolder;
+  }
+  a{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight:  bolder;
+    border-bottom: 2px solid rgb(60, 207, 78);
+  }
   th{
       color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight:  bolder;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight:  bolder;
   }
 
     .modal {
@@ -225,13 +256,13 @@
   @media (max-width: 768px) {
         .general {
             font-size: 12px;
-            width: 100%;
-            height: 100%;
+            /* width: 500px;
+            height: 100%; */
             padding: 0px 10px;
         }
 
         .modal-content {
-            width: 80%;
+            width: 100%;
         }
         .modal-content {
            /* display: block; */

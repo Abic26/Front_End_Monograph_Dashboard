@@ -5,11 +5,13 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
 import Modal_Login from './components/Modal_Login.vue'
 import Index_Login from './components/Index_Login.vue'
+import Prueba from './components/prueba.vue'
+
 
 // router
 const routes = [
     {
-        path: '/', component: Modal_Login
+        path: '/', component: Prueba,
     },
     {
         path: '/index_login', component: Index_Login, name: 'index_login'

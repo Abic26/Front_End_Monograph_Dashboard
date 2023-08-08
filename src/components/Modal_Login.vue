@@ -35,8 +35,8 @@ export default {
         user:'',
         pass:'',
         Succes:{
-            User:'abic26',
-            Pass:'abic26'
+            User:'123',
+            Pass:'123'
         }
 
     }), methods:{
@@ -47,6 +47,8 @@ export default {
             }
             if(this.user === this.Succes.User && this.pass === this.Succes.Pass){
                 console.log(todo);
+                const backdrop = document.querySelector(".modal-backdrop");
+                if (backdrop) backdrop.parentNode.removeChild(backdrop);
                     this.$router.push({ name: 'index_login'});                // this.hideModal()
                 // const url = `https://www.youtube.com/watch?v=i4rsSrnA-Ow&list=RDGMEM2VCIgaiSqOfVzBAjPJm-ag&index=4`;
                 // window.open(url, '_blank');
