@@ -2,6 +2,10 @@
 
 Proyecto Vue.js para gestionar y visualizar datos de una API externa (en este caso, https://randomuser.me) mediante un sistema de inicio de sesión. Este proyecto brinda acceso a los usuarios para explorar y examinar los datos proporcionados por la API externa.
 
+Visita el proyecto:
+[Monograph_Dashboard](https://prueba-tecnica-eglobal.vercel.app/#/)
+
+
 Credenciales login
 Usuario
 ```sh
@@ -131,7 +135,7 @@ Este proyecto está bajo la Licencia MIT, lo que significa que puedes:
 
 Si tienes preguntas, sugerencias o comentarios sobre este proyecto, no dudes en ponerte en contacto. Puedes visitarme a través de:
 
-- Correo electrónico: [contacto@example.com](mailto:contacto@example.com)
+- Correo electrónico: [abicsupa@gmail.com](mailto:abicsupa@gmail.com)
 - Sitio web: [Abic26_github_page](https://abic26.github.io/Cv_Andres_Lopez/)
 
 ¡Espero escuchar tus pensamientos y opiniones!
