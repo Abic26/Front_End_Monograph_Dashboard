@@ -138,6 +138,79 @@ p{
   overflow: hidden;
   
 }
+@media (max-width: 1500px) {
+  .container {
+    padding-top: 190px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .box1 {
+    padding-top: 20px;
+    margin-left: 0;
+    position: relative;
+  }
+  
+  .box1 h5 {
+    padding-top: 20px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  
+  h1 strong {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .box2 {
+    margin-left: 0;
+    order: -1;
+  }
+  
+  .imgDevices {
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding-top: 60px; /* Ajustar el espacio superior */
+    width: 100%; /* Cambiar el ancho a 100% */
+    flex-direction: column; /* Cambiar la dirección de flexión */
+  }
+  
+  .box1 {
+    padding-top: 20px; /* Ajustar el espacio superior */
+    margin-left: 0;
+    position: relative;
+  }
+  
+  .box1 h5 {
+    padding-top: 20px; /* Ajustar el espacio superior */
+    font-size: 18px; /* Ajustar el tamaño de fuente */
+    letter-spacing: 5px; /* Ajustar el espaciado entre letras */
+    font-weight: 700; /* Cambiar el peso de la fuente */
+  }
+  
+  h1 strong {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px; /* Ajustar el tamaño de fuente */
+    font-weight: 600; /* Cambiar el peso de la fuente */
+  }
+
+  .box2 {
+    margin-left: 0; /* Eliminar el margen izquierdo negativo */
+    order: -1;
+  }
+  
+  .imgDevices {
+    max-width: 100%; /* Cambiar el ancho máximo */
+    height: auto; /* Hacer que la altura sea automática */
+  }
+}
 @media (max-width: 768px) {
   .container {
     padding-top: 90px;
@@ -164,6 +237,7 @@ p{
   }
 
   .box2 {
+    order: 1;
     margin-left: -230px;
   }
   

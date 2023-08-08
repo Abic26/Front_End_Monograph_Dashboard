@@ -1,6 +1,6 @@
 <template>
     <!-- background the page -->
-    <div class="background container-fluid"></div>
+    <div class="background"></div>
     <slot></slot>
 </template>
 <style>

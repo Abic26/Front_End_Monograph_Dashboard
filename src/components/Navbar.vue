@@ -128,6 +128,56 @@
 
   /* Styles generals of nav responsive desing */
 
+  @media (max-width: 991px) {
+  header {
+    overflow: hidden;
+  }
+  
+  .logo {
+    padding-left: 15px; 
+  }
+  
+  img {
+    padding-left: 0;
+  }
+  
+  .options {
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4vh; 
+    background-color: white;
+  }
+  
+  .options p {
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .options p:hover {
+    color: #00000076;
+    cursor: pointer;
+    border-bottom: none; 
+  }
+  
+  .espacio {
+    padding-left: 20%;
+  }
+  
+  .login {
+    border-top: solid;
+    padding-left: 22%; 
+  }
+  
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .navbar-toggler {
+    margin-left: 680px;
+  }
+}
 
   @media (max-width: 768px) {
     header{
