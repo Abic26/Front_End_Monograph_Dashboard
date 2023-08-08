@@ -1,9 +1,9 @@
 <template>
-  
-  <NavBar />
-  <Main />
-  <bg />
-  <Modal_Login/>  
+
+  <div class="container-fluid"><NavBar /></div>
+  <div class="container-fluid"><Main /></div>
+  <div class="container-fluid"><bg /></div>
+  <div class="container-fluid"><Modal_Login/></div>  
 
 </template>
 <script>
@@ -23,4 +23,4 @@ export default {
 },
 }
 </script>
-<style></style>
+

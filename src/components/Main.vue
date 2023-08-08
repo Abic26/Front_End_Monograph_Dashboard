@@ -1,7 +1,7 @@
 <template>
  <!--main content -->
     <main>   
-    <div class="container">
+    <div class="container container-fluid">
         <div class="box1">
             <h5><span>NEW</span>  MONOGRAPH DASHBOARD</h5>
                 <div>

@@ -1,6 +1,6 @@
 <template>
   <!-- navbar page -->
-  <header>
+  <header class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <div class="d-flex justify-content-md-start align-items-center view">
@@ -12,7 +12,7 @@
             </span>
           </button>
         </div >
-          <div class="collapse navbar-collapse options" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse options container-fluid" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0" >
               <li class="nav-item">
                 <p class="nav-link espacio">PRODUCT</p>
@@ -109,7 +109,7 @@
   }
   
   .login {
-    padding: 0 130px; 
+    padding: 0 170px; 
   }
   
   .login p {

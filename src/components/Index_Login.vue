@@ -1,5 +1,5 @@
 <template>
-    <div class="general">
+    <div class="general container-fluid">
       <div class="container">
       <!-- Modal of update -->
       <div class="modal" :style="{ display: showModal ? 'block' : 'none' }">
