@@ -26,14 +26,20 @@
     </h2>
     <div class="search">
       <div class="input-group">
-      <span class="input-group-text">search by name or email or phone</span>
+        <select class="form-select-sm" aria-label="Default select example">
+          <option selected>Search by</option>
+          <option value="Name">Name</option>
+          <option value="Email">Email</option>
+          <option value="Phone">Phone</option>  
+        </select>
       <input  v-model="searchTerm" class="form-control" placeholder="SEARCH"> <br><br>
       </div>
       <br>
       <button class="btn btn-outline-success" @click="listUsers">Change Users</button>
     </div>
     <!-- User listing table. -->
-      <table class="user-table table">
+    <div class="Table">
+      <table class="table user-table">
         <thead>
           <tr>
             <th scope="col">Photo User</th>
@@ -54,14 +60,15 @@
             <td scope="row">{{ user.email }}</td>
             <td scope="row">{{ user.phone }}</td>
             <td scope="row">
-              <button class="btn btn-success" @click="showUpdateModal(index)">Update</button>
+              <button class="btn btn-success table" @click="showUpdateModal(index)">Update</button>
             </td>
             <td scope="row">
-              <button class="btn btn-danger" @click="deleteUser(index)">Delete</button>
+              <button class="btn btn-danger table" @click="deleteUser(index)">Delete</button>
             </td>
           </tr>
         </tbody>
       </table>
+      </div>
       </div>  
     </div>
   </template>
@@ -169,10 +176,10 @@
   }  
   .general{
     background:hsl(0, 69%, 86%);
-    /* height: 950px;
-    width: 800px; */
+    height: auto;
+    width: auto;
     margin-top: 40px;
-    margin-right: -450px;
+    /* margin-right: -450px; */
     border-radius: 15px;
     padding: 0px 20px 10px 20px;
     font-size: 15px;
@@ -255,10 +262,11 @@
   }
   @media (max-width: 768px) {
         .general {
+          margin-left: -20PX;
             font-size: 12px;
-            /* width: 500px;
-            height: 100%; */
-            padding: 0px 10px;
+            width: 470px;
+            height: 100%;
+            padding: 5px 0 10px 5px;
         }
 
         .modal-content {
@@ -279,9 +287,12 @@
         font-size: 28px;
         font-weight: bold;
     }
-
-        .user-table th,
-        .user-table td {
+  button.table{
+    color: #aaaaaa00;
+    /* font-size: 10; */
+    width: 10px;
+  }    
+  .user-table th,.user-table td {
             padding: 5px;
         }
     }

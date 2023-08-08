@@ -1,11 +1,9 @@
 <template>
   
-  <div>
   <NavBar />
   <Main />
   <bg />
   <Modal_Login/>  
-</div>
     <!-- <Index_Login /> -->
     <!-- <prueba /> -->
 </template>
@@ -28,3 +26,4 @@ export default {
 },
 }
 </script>
+<style></style>
