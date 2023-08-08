@@ -5,10 +5,10 @@
     <form >
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-10" id="staticBackdropLabel">Login</h1>
+        <h1 class="modal-title fs-10 fw-bolder text-danger" id="staticBackdropLabel">Welcome to Eglobal</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body d-grid gap-2 col-6 mx-auto">
         <div>
             <label>User</label><br>
             <input type="text" v-model.trim="user">
@@ -19,9 +19,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn cancel" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-success" @click="mostarinfo()">Send</button>
-
+        <button type="submit" class="btn btn-danger d-grid gap-2 col-10 mx-auto" @click="mostarinfo()">Login</button>
       </div>
     </div>
 

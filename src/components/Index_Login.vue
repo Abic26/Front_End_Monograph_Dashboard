@@ -21,7 +21,7 @@
       </div>
     </div>
     <br><br>
-    <h2>
+    <h2 class="pb-2">
     Table <a class="fs-1" href="https://randomuser.me/" target="_blank"> randomuser.me</a> Api
     </h2>
     <div class="search">
