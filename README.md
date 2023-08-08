@@ -61,7 +61,7 @@ Password
 ```sh
 Eglobal
 ```
-![Pagina principal](public/img_readme/login.png.png)
+![Pagina principal](public/img_readme/login.png)
 
 3. Ingresaras a la tabla de datos donde podrá observar los datos de la api externa (en este caso, https://randomuser.me)
 ![Pagina principal](public/img_readme/tabla_api.png)

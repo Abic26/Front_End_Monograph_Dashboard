@@ -32,8 +32,8 @@ export default {
         user:'',
         pass:'',
         Succes:{
-            User:'123',
-            Pass:'123'
+            User:'Eglobal',
+            Pass:'Eglobal'
         }
 
     }), methods:{
