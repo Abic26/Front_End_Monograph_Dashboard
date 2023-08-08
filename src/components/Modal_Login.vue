@@ -8,14 +8,13 @@
         <h1 class="modal-title fs-10 fw-bolder text-danger" id="staticBackdropLabel">Welcome to Eglobal</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body d-grid gap-2 col-6 mx-auto">
-        <div>
-            <label>User</label><br>
-            <input type="text" v-model.trim="user">
-        </div>
-        <div>
-            <label>Password</label><br>
-            <input type="password" v-model.trim="pass">
+      <div class="modal-body    ">
+
+        <div class="d-grid col-6 mx-auto col-10">
+            <label class="fw-bold">User</label>
+            <input type="text" v-model.trim="user" placeholder="eglobal">
+            <label class="fw-bold">Password</label>
+            <input type="password" placeholder="*******" v-model.trim="pass">
         </div>
       </div>
       <div class="modal-footer">
