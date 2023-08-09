@@ -6,6 +6,8 @@ import App from './App.vue'
 import Modal_Login from './components/Modal_Login.vue'
 import Index_Login from './components/Index_Login.vue'
 import Prueba from './components/prueba.vue'
+import Tabla_Back from './components/Table_Back.vue'
+
 
 
 // router
@@ -15,6 +17,9 @@ const routes = [
     },
     {
         path: '/index_login', component: Index_Login, name: 'index_login'
+    },
+    {
+        path: '/tabla_back', component: Tabla_Back, name: 'tabla_back'
     }
 ]
 

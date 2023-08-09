@@ -1,5 +1,5 @@
 <template>
-    <div class="general container-fluid">
+      <div class="general container-fluid">
       <div class="container">
       <!-- Modal of update -->
       <div class="modal" :style="{ display: showModal ? 'block' : 'none' }">
@@ -8,13 +8,13 @@
         <!-- Form of update -->
         <form @submit.prevent="updateUser">
         
-          <div class="form-group col-6 mx-auto"><label class="fs-10 fw-bolder" for="name">Name:</label><br>
+          <div class="form-group col-8 mx-auto"><label class="fs-10 fw-bolder" for="name">Name:</label><br>
           <input v-model="updatedName" id="name" type="text"></div>
         
-          <div class="form-group col-6 mx-auto"><label class="fs-10 fw-bolder" for="email">Email:</label><br>
+          <div class="form-group col-8 mx-auto"><label class="fs-10 fw-bolder" for="email">Email:</label><br>
           <input v-model="updatedEmail" id="email" type="text"></div>
             
-          <div class="form-group col-6 mx-auto"><label class="fs-10 fw-bolder" for="name">Phone:</label><br>
+          <div class="form-group col-8 mx-auto"><label class="fs-10 fw-bolder" for="name">Phone:</label><br>
           <input v-model="updatedPhone" id="phone" type="text"></div>
           <button class="btn btn-danger d-grid gap-2 col-8 mt-3 mx-auto" type="submit">Save</button>
         </form>
@@ -35,7 +35,8 @@
       <input  v-model="searchTerm" class="form-control" placeholder="SEARCH"> <br><br>
       </div>
       <br>
-      <button class="btn btn-outline-success" @click="listUsers">Change Users</button>
+      <button class="btn btn-outline-success d-grid gap-1 col-12 mt-1 mx-auto" @click="listUsers">Change Users</button>
+
     </div>
     <!-- User listing table. -->
     <div class="Table">
@@ -71,10 +72,18 @@
       </div>
       </div>  
     </div>
+    <div class="tableB">
+    <Table_Back />
+  </div>
   </template>
   
   <script>
+import Table_Back from './Table_Back.vue';
   export default {
+    components:{
+      Table_Back
+    },
+    
     
     data() {
       return {
@@ -109,6 +118,10 @@
 
         }
        
+      },
+      tableBack(){
+        this.$router.push({ name: 'tabla_back'});                // this.hideModal()
+
       },
       // update the users
       async updateUser(index) {
@@ -171,20 +184,22 @@
     <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
-  body{
-      /* background: hsl(207, 33%, 95%); */
-  }  
   .general{
     background:hsl(0, 69%, 86%);
     height: auto;
     width: auto;
-    margin-top: 40px;
-    /* margin-right: -450px; */
+    margin-top: 100px;
+    margin-left: -500px;
     border-radius: 15px;
     padding: 0px 20px 10px 20px;
     font-size: 15px;
     color: black;
 
+  }
+  .tableB{
+    position: absolute;
+    margin-top: -1105px;
+    margin-left: 350px;
   }
   h2{
     font-family: 'Barlow Condensed', sans-serif;
@@ -213,16 +228,16 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(127, 240, 123, 0.59);
+      background-color: rgba(132, 137, 132, 0.59);
     }
     
     .modal-content {
       display: block;
       background-color: white;
       margin: 15% auto;
-      padding: 40px 150px 50px 150px;
+      padding: 10px 150px 50px 150px;
       height: 35%;
-      width: 50%;
+      width: 30%;
     }
 
     
@@ -261,13 +276,15 @@
     margin-bottom: 10px;
   }
   @media (max-width: 768px) {
-        .general {
-          margin-left: -20PX;
-            font-size: 12px;
-            width: 470px;
-            height: 100%;
-            padding: 5px 0 10px 5px;
-        }
+     .general {
+    margin-left: 0; /* Eliminamos el margen izquierdo */
+    text-align: center; /* Centramos el contenido */
+  }
+  .tableB {
+    position: static; /* Cambiamos la posición a estática */
+    margin-top: 20px; /* Ajustamos el margen superior */
+    margin-left: 0; /* Eliminamos el margen izquierdo */
+  }
 
         .modal-content {
             width: 100%;
