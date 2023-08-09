@@ -20,8 +20,8 @@ Eglobal
 
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Ejemplos](#ejemplos)
-- [Contribucion](#Contribución)
+- [Despliegue](#despliegue)
+- [Contribución](#Contribución)
 - [Créditos](#créditos)
 - [Licencia](#licencia)
 - [Contacto](#contacto)
@@ -94,6 +94,15 @@ Haz click en el botón Delete para Eliminar el usuario no deseado y realice la a
 
 Haz click en el botón Change Users para actualizar los usuarios de la tabla
 ![Pagina principal](public/img_readme/change_users.png)
+
+## Despliegue
+
+Para el proyecto se desplego por medio de vercel, permitira ver el proyecto e interactuar con el mismo, ingresando por el siguiente link:
+
+```sh
+https://prueba-tecnica-eglobal.vercel.app/#/
+```
+![Pagina principal](public/img_readme/vercel_app.png)
 
 ## Contribución
 
