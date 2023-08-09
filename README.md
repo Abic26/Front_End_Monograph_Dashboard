@@ -5,7 +5,6 @@ Proyecto Vue.js para gestionar y visualizar datos de una API externa (en este ca
 Visita el proyecto:
 [Monograph_Dashboard](https://prueba-tecnica-eglobal.vercel.app/#/)
 
-
 Credenciales login
 Usuario
 ```sh
@@ -15,7 +14,6 @@ Password
 ```sh
 Eglobal
 ```
-
 ## Tabla de Contenidos
 
 - [Instalación](#instalación)
@@ -55,7 +53,7 @@ npm run dev
 1. Al inicializar el proyecto en local ingresaras a la pagina principal.
 ![Pagina principal](public/img_readme/page.png)
 
-2. luego ingresaras al login para validar tus credenciales e ingresar a la tabla Api.
+2. luego ingresaras al login para validar tus credenciales e ingresar a la Table randomuser.me Api y Table Users Backend / Lavarel.
 Credenciales login
 Usuario
 ```sh
@@ -68,6 +66,7 @@ Eglobal
 ![Pagina principal](public/img_readme/login.png)
 
 3. Ingresaras a la tabla de datos donde podrá observar los datos de la api externa (en este caso, https://randomuser.me)
+
 ![Pagina principal](public/img_readme/tabla_api.png)
 
 4. podrás manejar los datos con esta tabla, tienes varias funciones la cual va a poder utilizar e interactuar con la tabla
@@ -94,6 +93,22 @@ Haz click en el botón Delete para Eliminar el usuario no deseado y realice la a
 
 Haz click en el botón Change Users para actualizar los usuarios de la tabla
 ![Pagina principal](public/img_readme/change_users.png)
+
+### Table Users Backend / Lavarel.
+
+Encontrar la Table Users Backend / Lavarel donde podra interactuar con el backend del proyecto y agregar nuevos datos.
+
+![Pagina principal](public/img_readme/tabla_back.png)
+
+### Crear Nuevos Usuarios En Backend
+
+haz click en el boton New User:
+
+![Pagina principal](public/img_readme/tabla_back.png)
+
+Complete los datos y haga click en Create User para crear nuevos usuarios para en backend:
+
+![Pagina principal](public/img_readme/create_user_back.png)
 
 ## Despliegue
 
@@ -124,7 +139,6 @@ git commit -m "Agrega nueva funcionalidad"
 ```sh
 git push origin feature/nueva-funcionalidad
 ```
-
 ## Créditos
 
 Este proyecto fue creado por [Andres Felipe Lopez S. "Abic26"](https://github.com/Abic26).
