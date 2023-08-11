@@ -36,6 +36,8 @@
       </div>
       <br>
       <button class="btn btn-outline-success d-grid gap-1 col-12 mt-1 mx-auto" @click="listUsers">Change Users</button>
+      <button class="btn btn-outline-secondary d-grid gap-1 col-12 mt-1 mx-auto" @click="tableBack">Table BackEnd</button>
+
 
     </div>
     <!-- User listing table. -->
@@ -72,9 +74,9 @@
       </div>
       </div>  
     </div>
-    <div class="tableB">
+    <!-- <div class="tableB">
     <Table_Back />
-  </div>
+  </div> -->
   </template>
   
   <script>
@@ -107,11 +109,11 @@ import Table_Back from './Table_Back.vue';
       async listUsers() {
         try{ 
         console.log('xxxlistarUsuariosxxx')
-        const response = await fetch('https://randomuser.me/api/?results=10')
+        const response = await fetch('https://randomuser.me/api/?results=7')
         const data = await response.json()
         console.log(data);
         this.users = data.results
-        localStorage.setItem('usersLocal', JSON.stringify(this.users));
+        // localStorage.setItem('usersLocal', JSON.stringify(this.users));
 
         }catch (error){   
             console.error("error",error);
@@ -185,21 +187,17 @@ import Table_Back from './Table_Back.vue';
   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
   .general{
+    position: fixed;
     background:hsl(0, 69%, 86%);
     height: auto;
     width: auto;
-    margin-top: 100px;
-    margin-left: -500px;
+    margin-top: -450px;
+    margin-left: -450px;
     border-radius: 15px;
     padding: 0px 20px 10px 20px;
     font-size: 15px;
     color: black;
 
-  }
-  .tableB{
-    position: absolute;
-    margin-top: -1105px;
-    margin-left: 350px;
   }
   h2{
     font-family: 'Barlow Condensed', sans-serif;

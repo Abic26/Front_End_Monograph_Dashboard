@@ -96,7 +96,7 @@
   }
   
   img {
-    padding-left: 220px; 
+    padding-left: 214px; 
   }
   
   .options {
