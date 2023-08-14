@@ -6,7 +6,7 @@ Visita el proyecto:
 [Monograph_Dashboard](https://prueba-tecnica-eglobal.vercel.app/#/)
 
 Credenciales login Administrador
-Usuario
+
 ```sh
 Eglobal
 ```
