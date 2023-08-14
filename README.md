@@ -5,7 +5,7 @@ Proyecto Vue.js para gestionar y visualizar datos de una API externa (en este ca
 Visita el proyecto:
 [Monograph_Dashboard](https://prueba-tecnica-eglobal.vercel.app/#/)
 
-Credenciales login
+Credenciales login Administrador
 Usuario
 ```sh
 Eglobal
