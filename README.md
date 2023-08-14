@@ -54,7 +54,7 @@ npm run dev
 ![Pagina principal](public/img_readme/page.png)
 
 2. luego ingresaras al login para validar tus credenciales e ingresar a la Table randomuser.me Api y Table Users Backend / Lavarel.
-Credenciales login
+Credenciales login Como Administrador
 Usuario
 ```sh
 Eglobal

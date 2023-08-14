@@ -187,12 +187,12 @@ import Table_Back from './Table_Back.vue';
   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
   .general{
-    position: fixed;
+    /* position: fixed; */
     background:hsl(0, 69%, 86%);
     height: auto;
     width: auto;
-    margin-top: -450px;
-    margin-left: -450px;
+    margin-top: 200x;
+    margin-left: 150px;
     border-radius: 15px;
     padding: 0px 20px 10px 20px;
     font-size: 15px;
@@ -273,15 +273,12 @@ import Table_Back from './Table_Back.vue';
   .form-group {
     margin-bottom: 10px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
      .general {
+      width: 120%;
+    /* position: fixed;  */
     margin-left: 0; /* Eliminamos el margen izquierdo */
     text-align: center; /* Centramos el contenido */
-  }
-  .tableB {
-    position: static; /* Cambiamos la posición a estática */
-    margin-top: 20px; /* Ajustamos el margen superior */
-    margin-left: 0; /* Eliminamos el margen izquierdo */
   }
 
         .modal-content {
@@ -291,7 +288,7 @@ import Table_Back from './Table_Back.vue';
            /* display: block; */
            background-color: white;
            /* margin: 15% auto; */
-           padding: 60px 30px 50px 60px;
+           padding: 20px 10px 20px 10px;
            /* height: 35%; */
            /* width: 50%; */
     }
@@ -308,7 +305,7 @@ import Table_Back from './Table_Back.vue';
     width: 10px;
   }    
   .user-table th,.user-table td {
-            padding: 5px;
+            padding: 1px;
         }
     }
     </style>
